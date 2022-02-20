@@ -50,7 +50,7 @@ verifiacaAutenticacion(): Observable<boolean>{
     return of(false);
   }
 
-//si tenemos token, tnemos uqe mirar si es el correcto:
+//si tenemos token, tenemos que mirar si es el correcto:
 
   return this.http.get<Auth>(`${this.baseUrl}/usuarios/1`)
             .pipe(
